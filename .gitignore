@@ -2,3 +2,10 @@ build
 *~
 .*.swp
 *.pyc
+*.obj
+*.lib
+*.sdf
+ipch
+
+
+
