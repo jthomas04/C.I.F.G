@@ -1,0 +1,6 @@
+D:/T/dhewm3-master/build/CMakeFiles/ALL_BUILD.dir
+D:/T/dhewm3-master/build/CMakeFiles/ZERO_CHECK.dir
+D:/T/dhewm3-master/build/CMakeFiles/base.dir
+D:/T/dhewm3-master/build/CMakeFiles/d3xp.dir
+D:/T/dhewm3-master/build/CMakeFiles/dhewm3.dir
+D:/T/dhewm3-master/build/CMakeFiles/idlib.dir

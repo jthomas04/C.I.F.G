@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{940D8162-0A54-406C-AC1E-701E4C92AA3D}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>base</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\T\dhewm3-master\build\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">base.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">base</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\T\dhewm3-master\build\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">base.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">base</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\T\dhewm3-master\build\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">base.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">base</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\T\dhewm3-master\build\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">base.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">base</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\AL;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\SDL;D:\T\dhewm3-master\build;D:\T\dhewm3-master\neo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/T/dhewm3-master/neo/game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4245;4267;4714;4996;4068</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;GAME_DLL;_ALLOW_KEYWORD_MACROS;WINVER=0x0501;_WIN32_WINNT=0x0501;CMAKE_INTDIR="Debug";base_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;GAME_DLL;_ALLOW_KEYWORD_MACROS;WINVER=0x0501;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"Debug\";base_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\AL;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\SDL;D:\T\dhewm3-master\build;D:\T\dhewm3-master\neo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\AL;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\SDL;D:\T\dhewm3-master\build;D:\T\dhewm3-master\neo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Debug\idlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>D:/T/dhewm3-master/build/Debug/base.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/T/dhewm3-master/build/Debug/base.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\AL;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\SDL;D:\T\dhewm3-master\build;D:\T\dhewm3-master\neo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/T/dhewm3-master/neo/game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4100;4127;4244;4245;4267;4714;4996;4068</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;GAME_DLL;_ALLOW_KEYWORD_MACROS;WINVER=0x0501;_WIN32_WINNT=0x0501;CMAKE_INTDIR="Release";base_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;GAME_DLL;_ALLOW_KEYWORD_MACROS;WINVER=0x0501;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"Release\";base_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\AL;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\SDL;D:\T\dhewm3-master\build;D:\T\dhewm3-master\neo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\AL;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\SDL;D:\T\dhewm3-master\build;D:\T\dhewm3-master\neo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Release\idlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>D:/T/dhewm3-master/build/Release/base.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/T/dhewm3-master/build/Release/base.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\AL;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\SDL;D:\T\dhewm3-master\build;D:\T\dhewm3-master\neo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/T/dhewm3-master/neo/game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4100;4127;4244;4245;4267;4714;4996;4068</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;GAME_DLL;_ALLOW_KEYWORD_MACROS;WINVER=0x0501;_WIN32_WINNT=0x0501;CMAKE_INTDIR="MinSizeRel";base_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;GAME_DLL;_ALLOW_KEYWORD_MACROS;WINVER=0x0501;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"MinSizeRel\";base_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\AL;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\SDL;D:\T\dhewm3-master\build;D:\T\dhewm3-master\neo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\AL;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\SDL;D:\T\dhewm3-master\build;D:\T\dhewm3-master\neo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;MinSizeRel\idlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>D:/T/dhewm3-master/build/MinSizeRel/base.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/T/dhewm3-master/build/MinSizeRel/base.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\AL;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\SDL;D:\T\dhewm3-master\build;D:\T\dhewm3-master\neo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:/T/dhewm3-master/neo/game;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4245;4267;4714;4996;4068</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;GAME_DLL;_ALLOW_KEYWORD_MACROS;WINVER=0x0501;_WIN32_WINNT=0x0501;CMAKE_INTDIR="RelWithDebInfo";base_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;GAME_DLL;_ALLOW_KEYWORD_MACROS;WINVER=0x0501;_WIN32_WINNT=0x0501;CMAKE_INTDIR=\"RelWithDebInfo\";base_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\AL;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\SDL;D:\T\dhewm3-master\build;D:\T\dhewm3-master\neo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\AL;D:\T\dhewm3-master\dhewm3-libs-master\i686-w64-mingw32\include\SDL;D:\T\dhewm3-master\build;D:\T\dhewm3-master\neo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;RelWithDebInfo\idlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>D:/T/dhewm3-master/build/RelWithDebInfo/base.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/T/dhewm3-master/build/RelWithDebInfo/base.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\neo\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/T/dhewm3-master/neo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+E:\cm\bin\cmake.exe -HD:/T/dhewm3-master/neo -BD:/T/dhewm3-master/build --check-stamp-file D:\T\dhewm3-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/T/dhewm3-master/neo/CMakeLists.txt;D:\T\dhewm3-master\neo\CMakeLists.txt;E:\cm\share\cmake-3.0\Modules\CMakeDetermineSystem.cmake;E:\cm\share\cmake-3.0\Modules\CMakeSystem.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeSystem.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;E:\cm\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;E:\cm\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;E:\cm\share\cmake-3.0\Modules\CMakeClDeps.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-CXX.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;E:\cm\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;E:\cm\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;E:\cm\share\cmake-3.0\Modules\CMakeClDeps.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCXXCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;E:\cm\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows.cmake;E:\cm\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCInformation.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineRCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeRCCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeRCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeRCInformation.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestRCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCCompilerABI.c;E:\cm\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCXXInformation.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCXXCompilerABI.cpp;E:\cm\share\cmake-3.0\Modules\CMakeCXXCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CheckCXXCompilerFlag.cmake;E:\cm\share\cmake-3.0\Modules\CheckCXXSourceCompiles.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\cm\share\cmake-3.0\Modules\CheckFunctionExists.cmake;E:\cm\share\cmake-3.0\Modules\GNUInstallDirs.cmake;E:\cm\share\cmake-3.0\Modules\FindZLIB.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindJPEG.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\sys\cmake\FindOGG.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\sys\cmake\FindVorbis.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\sys\cmake\FindVorbisFile.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindOpenAL.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindSDL.cmake;E:\cm\share\cmake-3.0\Modules\FindThreads.cmake;E:\cm\share\cmake-3.0\Modules\CheckIncludeFiles.cmake;E:\cm\share\cmake-3.0\Modules\CheckLibraryExists.cmake;E:\cm\share\cmake-3.0\Modules\CheckSymbolExists.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindCURL.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\config.h.in;D:\T\dhewm3-master\neo\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\T\dhewm3-master\build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/T/dhewm3-master/neo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+E:\cm\bin\cmake.exe -HD:/T/dhewm3-master/neo -BD:/T/dhewm3-master/build --check-stamp-file D:\T\dhewm3-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/T/dhewm3-master/neo/CMakeLists.txt;D:\T\dhewm3-master\neo\CMakeLists.txt;E:\cm\share\cmake-3.0\Modules\CMakeDetermineSystem.cmake;E:\cm\share\cmake-3.0\Modules\CMakeSystem.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeSystem.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;E:\cm\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;E:\cm\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;E:\cm\share\cmake-3.0\Modules\CMakeClDeps.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-CXX.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;E:\cm\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;E:\cm\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;E:\cm\share\cmake-3.0\Modules\CMakeClDeps.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCXXCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;E:\cm\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows.cmake;E:\cm\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCInformation.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineRCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeRCCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeRCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeRCInformation.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestRCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCCompilerABI.c;E:\cm\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCXXInformation.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCXXCompilerABI.cpp;E:\cm\share\cmake-3.0\Modules\CMakeCXXCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CheckCXXCompilerFlag.cmake;E:\cm\share\cmake-3.0\Modules\CheckCXXSourceCompiles.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\cm\share\cmake-3.0\Modules\CheckFunctionExists.cmake;E:\cm\share\cmake-3.0\Modules\GNUInstallDirs.cmake;E:\cm\share\cmake-3.0\Modules\FindZLIB.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindJPEG.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\sys\cmake\FindOGG.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\sys\cmake\FindVorbis.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\sys\cmake\FindVorbisFile.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindOpenAL.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindSDL.cmake;E:\cm\share\cmake-3.0\Modules\FindThreads.cmake;E:\cm\share\cmake-3.0\Modules\CheckIncludeFiles.cmake;E:\cm\share\cmake-3.0\Modules\CheckLibraryExists.cmake;E:\cm\share\cmake-3.0\Modules\CheckSymbolExists.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindCURL.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\config.h.in;D:\T\dhewm3-master\neo\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\T\dhewm3-master\build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/T/dhewm3-master/neo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+E:\cm\bin\cmake.exe -HD:/T/dhewm3-master/neo -BD:/T/dhewm3-master/build --check-stamp-file D:\T\dhewm3-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/T/dhewm3-master/neo/CMakeLists.txt;D:\T\dhewm3-master\neo\CMakeLists.txt;E:\cm\share\cmake-3.0\Modules\CMakeDetermineSystem.cmake;E:\cm\share\cmake-3.0\Modules\CMakeSystem.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeSystem.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;E:\cm\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;E:\cm\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;E:\cm\share\cmake-3.0\Modules\CMakeClDeps.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-CXX.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;E:\cm\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;E:\cm\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;E:\cm\share\cmake-3.0\Modules\CMakeClDeps.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCXXCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;E:\cm\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows.cmake;E:\cm\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCInformation.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineRCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeRCCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeRCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeRCInformation.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestRCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCCompilerABI.c;E:\cm\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCXXInformation.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCXXCompilerABI.cpp;E:\cm\share\cmake-3.0\Modules\CMakeCXXCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CheckCXXCompilerFlag.cmake;E:\cm\share\cmake-3.0\Modules\CheckCXXSourceCompiles.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\cm\share\cmake-3.0\Modules\CheckFunctionExists.cmake;E:\cm\share\cmake-3.0\Modules\GNUInstallDirs.cmake;E:\cm\share\cmake-3.0\Modules\FindZLIB.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindJPEG.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\sys\cmake\FindOGG.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\sys\cmake\FindVorbis.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\sys\cmake\FindVorbisFile.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindOpenAL.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindSDL.cmake;E:\cm\share\cmake-3.0\Modules\FindThreads.cmake;E:\cm\share\cmake-3.0\Modules\CheckIncludeFiles.cmake;E:\cm\share\cmake-3.0\Modules\CheckLibraryExists.cmake;E:\cm\share\cmake-3.0\Modules\CheckSymbolExists.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindCURL.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\config.h.in;D:\T\dhewm3-master\neo\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\T\dhewm3-master\build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/T/dhewm3-master/neo/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+E:\cm\bin\cmake.exe -HD:/T/dhewm3-master/neo -BD:/T/dhewm3-master/build --check-stamp-file D:\T\dhewm3-master\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/T/dhewm3-master/neo/CMakeLists.txt;D:\T\dhewm3-master\neo\CMakeLists.txt;E:\cm\share\cmake-3.0\Modules\CMakeDetermineSystem.cmake;E:\cm\share\cmake-3.0\Modules\CMakeSystem.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeSystem.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;E:\cm\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;E:\cm\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;E:\cm\share\cmake-3.0\Modules\CMakeClDeps.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-CXX.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;E:\cm\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;E:\cm\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;E:\cm\share\cmake-3.0\Modules\CMakeClDeps.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCXXCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;E:\cm\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows.cmake;E:\cm\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCInformation.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineRCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeRCCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeRCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeRCInformation.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestRCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCCompilerABI.c;E:\cm\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCXXInformation.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC-CXX.cmake;E:\cm\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;E:\cm\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCXXCompilerABI.cpp;E:\cm\share\cmake-3.0\Modules\CMakeCXXCompiler.cmake.in;D:\T\dhewm3-master\build\CMakeFiles\3.0.2\CMakeCXXCompiler.cmake;E:\cm\share\cmake-3.0\Modules\CheckCXXCompilerFlag.cmake;E:\cm\share\cmake-3.0\Modules\CheckCXXSourceCompiles.cmake;E:\cm\share\cmake-3.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;E:\cm\share\cmake-3.0\Modules\CheckFunctionExists.cmake;E:\cm\share\cmake-3.0\Modules\GNUInstallDirs.cmake;E:\cm\share\cmake-3.0\Modules\FindZLIB.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindJPEG.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\sys\cmake\FindOGG.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\sys\cmake\FindVorbis.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\sys\cmake\FindVorbisFile.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindOpenAL.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindSDL.cmake;E:\cm\share\cmake-3.0\Modules\FindThreads.cmake;E:\cm\share\cmake-3.0\Modules\CheckIncludeFiles.cmake;E:\cm\share\cmake-3.0\Modules\CheckLibraryExists.cmake;E:\cm\share\cmake-3.0\Modules\CheckSymbolExists.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;E:\cm\share\cmake-3.0\Modules\FindCURL.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageHandleStandardArgs.cmake;E:\cm\share\cmake-3.0\Modules\FindPackageMessage.cmake;E:\cm\share\cmake-3.0\Modules\CMakeParseArguments.cmake;D:\T\dhewm3-master\neo\config.h.in;D:\T\dhewm3-master\neo\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\T\dhewm3-master\build\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\neo\game\AF.cpp"  />
+    <ClCompile Include="..\neo\game\AFEntity.cpp"  />
+    <ClCompile Include="..\neo\game\Actor.cpp"  />
+    <ClCompile Include="..\neo\game\Camera.cpp"  />
+    <ClCompile Include="..\neo\game\Entity.cpp"  />
+    <ClCompile Include="..\neo\game\BrittleFracture.cpp"  />
+    <ClCompile Include="..\neo\game\Fx.cpp"  />
+    <ClCompile Include="..\neo\game\GameEdit.cpp"  />
+    <ClCompile Include="..\neo\game\Game_local.cpp"  />
+    <ClCompile Include="..\neo\game\Game_network.cpp"  />
+    <ClCompile Include="..\neo\game\Item.cpp"  />
+    <ClCompile Include="..\neo\game\IK.cpp"  />
+    <ClCompile Include="..\neo\game\Light.cpp"  />
+    <ClCompile Include="..\neo\game\Misc.cpp"  />
+    <ClCompile Include="..\neo\game\Mover.cpp"  />
+    <ClCompile Include="..\neo\game\Moveable.cpp"  />
+    <ClCompile Include="..\neo\game\MultiplayerGame.cpp"  />
+    <ClCompile Include="..\neo\game\Player.cpp"  />
+    <ClCompile Include="..\neo\game\PlayerIcon.cpp"  />
+    <ClCompile Include="..\neo\game\PlayerView.cpp"  />
+    <ClCompile Include="..\neo\game\Projectile.cpp"  />
+    <ClCompile Include="..\neo\game\Pvs.cpp"  />
+    <ClCompile Include="..\neo\game\SecurityCamera.cpp"  />
+    <ClCompile Include="..\neo\game\SmokeParticles.cpp"  />
+    <ClCompile Include="..\neo\game\Sound.cpp"  />
+    <ClCompile Include="..\neo\game\Target.cpp"  />
+    <ClCompile Include="..\neo\game\Trigger.cpp"  />
+    <ClCompile Include="..\neo\game\Weapon.cpp"  />
+    <ClCompile Include="..\neo\game\WorldSpawn.cpp"  />
+    <ClCompile Include="..\neo\game\ai\AAS.cpp"  />
+    <ClCompile Include="..\neo\game\ai\AAS_debug.cpp"  />
+    <ClCompile Include="..\neo\game\ai\AAS_pathing.cpp"  />
+    <ClCompile Include="..\neo\game\ai\AAS_routing.cpp"  />
+    <ClCompile Include="..\neo\game\ai\AI.cpp"  />
+    <ClCompile Include="..\neo\game\ai\AI_events.cpp"  />
+    <ClCompile Include="..\neo\game\ai\AI_pathing.cpp"  />
+    <ClCompile Include="..\neo\game\ai\AI_Vagary.cpp"  />
+    <ClCompile Include="..\neo\game\gamesys\DebugGraph.cpp"  />
+    <ClCompile Include="..\neo\game\gamesys\Class.cpp"  />
+    <ClCompile Include="..\neo\game\gamesys\Event.cpp"  />
+    <ClCompile Include="..\neo\game\gamesys\SaveGame.cpp"  />
+    <ClCompile Include="..\neo\game\gamesys\SysCmds.cpp"  />
+    <ClCompile Include="..\neo\game\gamesys\SysCvar.cpp"  />
+    <ClCompile Include="..\neo\game\gamesys\TypeInfo.cpp"  />
+    <ClCompile Include="..\neo\game\anim\Anim.cpp"  />
+    <ClCompile Include="..\neo\game\anim\Anim_Blend.cpp"  />
+    <ClCompile Include="..\neo\game\anim\Anim_Import.cpp"  />
+    <ClCompile Include="..\neo\game\anim\Anim_Testmodel.cpp"  />
+    <ClCompile Include="..\neo\game\script\Script_Compiler.cpp"  />
+    <ClCompile Include="..\neo\game\script\Script_Interpreter.cpp"  />
+    <ClCompile Include="..\neo\game\script\Script_Program.cpp"  />
+    <ClCompile Include="..\neo\game\script\Script_Thread.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Clip.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Force.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Force_Constant.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Force_Drag.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Force_Field.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Force_Spring.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Physics.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Physics_AF.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Physics_Actor.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Physics_Base.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Physics_Monster.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Physics_Parametric.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Physics_Player.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Physics_RigidBody.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Physics_Static.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Physics_StaticMulti.cpp"  />
+    <ClCompile Include="..\neo\game\physics\Push.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/T/dhewm3-master/build/ZERO_CHECK.vcxproj">
+      <Project>C07358BE-71EC-4382-B9AC-C4CBE6DD6C80</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/T/dhewm3-master/build/idlib.vcxproj">
+      <Project>3DB11F32-247E-4246-9A77-B761E5B9BB76</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
